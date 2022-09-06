@@ -1,8 +1,11 @@
 # 🔊 ii-vent
 
-Event organization app specializing in music events with event info pages, assignable tasks, event chat and more!
+A good event is an organized event!
 
-_DROP SCREENSHOT HERE_
+ii-vent streamlines the management of music events by bringing all those involved together, in one place and providing them with all the organizational tools and relevant information they need to make their next event a success.
+
+
+![Landing : Home Page](https://user-images.githubusercontent.com/76161172/188619526-5d9cd3c2-7180-44fc-bcd3-6ed774373079.png)
 <br>
 App home: https://www.ii-vent.live/
    
@@ -47,13 +50,11 @@ rails s
 - [Heroku](https://heroku.com/) - Deployment
 - [PostgreSQL](https://www.postgresql.org/) - Database
 - [Bootstrap](https://getbootstrap.com/) — Styling
+- [Cloudinary] (https://cloudinary.com/) - Image / File Hosting
 - [Figma](https://www.figma.com) — Prototyping
 
-## Acknowledgements
-Inspired by Jane Mount's [Bibliophile](https://www.amazon.com/Bibliophile-Illustrated-Miscellany-Jane-Mount/dp/1452167230) and a story my father once told me: "Why do we keep books? ... We keep books because they remind us of the new perspectives and lessons we learned".
-
 ## Team Members
-- [Douglas Berkley](https://www.linkedin.com/in/dougberkley/)
+- [Kyle Jeffrey](https://www.linkedin.com/in/kyle-jeffrey/)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
