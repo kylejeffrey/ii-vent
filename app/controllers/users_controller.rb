@@ -31,7 +31,7 @@ class UsersController < ApplicationController
       start_date = params.fetch(:start_date, Date.today).to_date
 
       # For a monthly view:
-      @current_month_events = Event.where(start_date: start_date.beginning_of_month.beginning_of_week..start_date.end_of_month.end_of_week)
+      @current_month_events = @events.where(start_date: start_date.beginning_of_month.beginning_of_week..start_date.end_of_month.end_of_week)
       # raise
     else
       redirect_to root_path, alert: "You are not authorized to perform this action."
