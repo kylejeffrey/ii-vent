@@ -50,7 +50,7 @@ rails s
 - [Heroku](https://heroku.com/) - Deployment
 - [PostgreSQL](https://www.postgresql.org/) - Database
 - [Bootstrap](https://getbootstrap.com/) — Styling
-- [Cloudinary] (https://cloudinary.com/) - Image / File Hosting
+- [Cloudinary](https://cloudinary.com/) - Image / File Hosting
 - [Figma](https://www.figma.com) — Prototyping
 
 ## Team Members
