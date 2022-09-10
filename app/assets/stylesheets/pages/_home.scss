@@ -19,6 +19,7 @@
   height: auto;
   width: 250px;
   cursor: pointer;
+  z-index: 1;
 }
 
 section {
@@ -184,7 +185,8 @@ section .content .brand-btn {
   text-align: center;
   width: 100%;
   transition: all 0.5s ease;
-  transform: translateY(50px);;
+  transform: translateY(50px);
+  ;
 }
 
 .landing-card:hover .landing-card-content .landing-card-details {
@@ -286,9 +288,10 @@ section .content .brand-btn {
 }
 
 @media screen and (max-width: 1170px) {
+
   // cover the image with a dark overlay
   section img {
-    opacity: 0.5;
+    // opacity: 0.5;
   }
 }
 
