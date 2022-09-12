@@ -13,7 +13,7 @@
 }
 
 .home-logo {
-  position: fixed;
+  position: absolute;
   top: 22px;
   left: 20px;
   height: auto;
@@ -291,7 +291,7 @@ section .content .brand-btn {
 
   // cover the image with a dark overlay
   section img {
-    // opacity: 0.5;
+    opacity: 0.5;
   }
 }
 
