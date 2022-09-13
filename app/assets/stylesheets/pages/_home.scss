@@ -34,7 +34,7 @@ section .bg {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 100vh;
 }
 
 section .content {
@@ -303,5 +303,9 @@ section .content .brand-btn {
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
+  }
+
+  .social-media {
+    position: sticky;
   }
 }
