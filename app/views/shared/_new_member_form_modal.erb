@@ -20,7 +20,7 @@
                     action: 'submit->add-member-to-task#addMember',
                   }, html: {class: 'form-class'}) do |f| %>
                     <%= f.input :event_member_id, as: :hidden, input_html: {value: event_member.id }%>
-                    <%= image_submit_tag(event_member.user.avatar_url,
+                    <%= image_submit_tag(event_member.user.avatar?,
                     class: 'event-member-avatar align-self-stretch',
                     style: 'box-sizing: border-box;',
                     id: 'member-avatar',
