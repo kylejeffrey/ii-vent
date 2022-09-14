@@ -1,4 +1,5 @@
-<%= image_tag member.user.avatar_url,
+<%= image_tag member.user.avatar_url? ? member.user.avatar_url : "https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg",
+# <%= image_tag member.user.avatar_url,
   alt: "user-avatar",
   class: 'event-member-avatar',
   data: {bs_toggle: "tooltip", bs_placement: 'top'},
