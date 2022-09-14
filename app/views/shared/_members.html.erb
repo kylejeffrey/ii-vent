@@ -8,25 +8,25 @@
     <h2 class="text-white align-self-center p-3">Managers</h2>
     <div class="grid-members">
       <% if event.event_members.manager.present?  %>
-      <% event.event_members.manager.each do |manager| %>
-        <div class="container-fluid">
-          <div class="card-product">
-            <% if manager.user.avatar_url.blank? %>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-            <% else %>
-              <img src="<%= manager.user.avatar_url %>" alt="">
-            <% end %>
-            <div class="card-product-infos">
-              <h2><%= manager.user.first_name %> <%= manager.user.last_name %></h2>
-              <% if manager.tasks.count == 0 %>
-                <p>Does not have tasks remaining.</p>
+        <% event.event_members.manager.each do |manager| %>
+          <div class="container-fluid">
+            <div class="card-product">
+              <% if manager.user.avatar_url.blank? %>
+                <img src="https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg">
               <% else %>
-                <p>Has <%= pluralize(manager.tasks.count, "task") %> remaining...</p>
+                <img src="<%= manager.user.avatar_url %>" alt="">
               <% end %>
+              <div class="card-product-infos">
+                <h2><%= manager.user.first_name %> <%= manager.user.last_name %></h2>
+                <% if manager.tasks.count == 0 %>
+                  <p>Does not have tasks remaining.</p>
+                <% else %>
+                  <p>Has <%= pluralize(manager.tasks.count, "task") %> remaining...</p>
+                <% end %>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
       <% else %>
         <h3 class="fst-italic align-self-center">No managers yet...</h3>
       <% end %>
@@ -36,25 +36,25 @@
     <h2 class="text-white align-self-center p-3">Artists</h2>
     <div class="grid-members">
       <% if event.event_members.artist.present?  %>
-      <% event.event_members.artist.each do |artist|  %>
-        <div class="container-fluid">
-          <div class="card-product">
-            <% if artist.user.avatar_url.blank? %>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-            <% else %>
-              <img src="<%= artist.user.avatar_url %>" alt="">
-            <% end %>
-            <div class="card-product-infos">
-              <h2><%= artist.user.first_name %> <%= artist.user.last_name %></h2>
-              <% if artist.tasks.count == 0 %>
-                <p>Does not have tasks remaining.</p>
+        <% event.event_members.artist.each do |artist|  %>
+          <div class="container-fluid">
+            <div class="card-product">
+              <% if artist.user.avatar_url.blank? %>
+                <img src="https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg">
               <% else %>
-                <p>Has <%= pluralize(artist.tasks.count, "task") %> remaining...</p>
+                <img src="<%= artist.user.avatar_url %>" alt="">
               <% end %>
+              <div class="card-product-infos">
+                <h2><%= artist.user.first_name %> <%= artist.user.last_name %></h2>
+                <% if artist.tasks.count == 0 %>
+                  <p>Does not have tasks remaining.</p>
+                <% else %>
+                  <p>Has <%= pluralize(artist.tasks.count, "task") %> remaining...</p>
+                <% end %>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
       <% else %>
         <h5 class="fst-italic align-self-center">No artists yet...</h5>
       <% end %>
@@ -64,25 +64,25 @@
     <h2 class="text-white align-self-center p-3">Security</h2>
     <div class="grid-members">
       <% if event.event_members.security.present?  %>
-      <% event.event_members.security.each do |security|  %>
-        <div class="container-fluid">
-          <div class="card-product">
-            <% if security.user.avatar_url.blank? %>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-            <% else %>
-              <img src="<%= security.user.avatar_url %>" alt="">
-            <% end %>
-            <div class="card-product-infos">
-              <h2><%= security.user.first_name %> <%= security.user.last_name %></h2>
-              <% if security.tasks.count == 0 %>
-                <p>Does not have tasks remaining.</p>
+        <% event.event_members.security.each do |security|  %>
+          <div class="container-fluid">
+            <div class="card-product">
+              <% if security.user.avatar_url.blank? %>
+                <img src="https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg">
               <% else %>
-                <p>Has <%= pluralize(security.tasks.count, "task") %> remaining...</p>
+                <img src="<%= security.user.avatar_url %>" alt="">
               <% end %>
+              <div class="card-product-infos">
+                <h2><%= security.user.first_name %> <%= security.user.last_name %></h2>
+                <% if security.tasks.count == 0 %>
+                  <p>Does not have tasks remaining.</p>
+                <% else %>
+                  <p>Has <%= pluralize(security.tasks.count, "task") %> remaining...</p>
+                <% end %>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
       <% else %>
         <h5 class="fst-italic align-self-center">No security members yet...</h5>
       <% end %>
@@ -92,25 +92,25 @@
     <h2 class="text-white align-self-center p-3">Staff</h2>
     <div class="grid-members">
       <% if event.event_members.staff.present?  %>
-      <% event.event_members.staff.each do |staff|  %>
-        <div class="container-fluid">
-          <div class="card-product">
-            <% if staff.user.avatar_url.blank? %>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-            <% else %>
-              <img src="<%= staff.user.avatar_url %>" alt="">
-            <% end %>
-            <div class="card-product-infos">
-              <h2><%= staff.user.first_name %> <%= staff.user.last_name %></h2>
-              <% if staff.tasks.count == 0 %>
-                <p>Does not have tasks remaining.</p>
+        <% event.event_members.staff.each do |staff|  %>
+          <div class="container-fluid">
+            <div class="card-product">
+              <% if staff.user.avatar_url.blank? %>
+                <img src="https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg">
               <% else %>
-                <p>Has <%= pluralize(staff.tasks.count, "task") %> remaining...</p>
+                <img src="<%= staff.user.avatar_url %>" alt="">
               <% end %>
+              <div class="card-product-infos">
+                <h2><%= staff.user.first_name %> <%= staff.user.last_name %></h2>
+                <% if staff.tasks.count == 0 %>
+                  <p>Does not have tasks remaining.</p>
+                <% else %>
+                  <p>Has <%= pluralize(staff.tasks.count, "task") %> remaining...</p>
+                <% end %>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
       <% else %>
         <h5 class="fst-italic align-self-center mb-4">No staff members yet...</h5>
       <% end %>

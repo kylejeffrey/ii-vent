@@ -1,7 +1,7 @@
 <div id="message-<%= message.id %>" class="pb-1">
   <small class="d-flex gap-2 align-items-center mb-1">
     <div class="message-header d-flex align-items-center gap-1">
-      <%= image_tag message.event_member.user.avatar_url, alt: "text" %>
+      <%= image_tag message.event_member.user.avatar_url? ? message.event_member.user.avatar_url : "https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg", alt: "text" %>
       <% if message.event_member.user.first_name == 'System' %>
         <strong><%= message.event_member.user.first_name %></strong>
       <% else %>
