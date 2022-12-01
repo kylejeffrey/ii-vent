@@ -12,7 +12,8 @@
     <meta property="og:description" content="<%= meta_description %>" />
     <meta property="og:site_name" content="<%= meta_title %>" />
     <%# Removing viewport meta tag as temp solution for total collapse on mobile %>
-    <%# <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> %>
+    <%# Doing so (commenting below line out) caused Heroku to crash - not sure if related. Redis errors in Heroku logs %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
