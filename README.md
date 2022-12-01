@@ -55,6 +55,9 @@ rails s
 
 ## Team Members
 - [Kyle Jeffrey](https://www.linkedin.com/in/kyle-jeffrey/)
+- Mark J Rawlins
+- Mounir El Jamghili
+- Soufiane Ezzine
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
